@@ -8,7 +8,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    // TODO: Steps 4 & 8 - Declare member variables here:
     TextView story;
     Button path1;
     Button path2;
@@ -19,14 +18,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        // TODO: Step 5 - Wire up the 3 views from the layout to the member variables:
         story = (TextView)findViewById((R.id.storyTextView));
         path1 = (Button)findViewById((R.id.buttonTop));
         path2 = (Button)findViewById((R.id.buttonBottom));
 
-
-        // TODO: Steps 6, 7, & 9 - Set a listener on the top button:
         path1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,9 +29,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
-        // TODO: Steps 6, 7, & 9 - Set a listener on the bottom button:
         path2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
